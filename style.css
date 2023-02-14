@@ -36,13 +36,17 @@ body {
   opacity: 50%;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .header {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-  height: 100%;
-  padding-top: 50px;
+  flex: 0 0 auto;
+  padding: 10px;
+  padding-top: 1em;
+  margin-bottom: 1em;
 }
 
 .header__logo {
@@ -50,11 +54,15 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  z-index: 2;
   max-width: 100%;
 }
 
+.container__textbox {
+  display: flex;
+}
+
 .textbox {
+  flex: 0 0 auto;
   background-color: rgba(68, 84, 106, 0.5);
   border-radius: 20px;
   font-size: 30px;
