@@ -30,23 +30,28 @@ body {
 }
 
 .body__background {
-  z-index: 0;
+  background-image: url("images/weusebannerbg.jpg");
   position: absolute;
-  width: 100%;
-  min-height: 100vh;
   opacity: 50%;
+  height: 100%;
+
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  z-index: 1;
+  position: relative;
 }
 
 .header {
   flex: 0 0 auto;
-  padding: 10px;
   padding-top: 1em;
   margin-bottom: 1em;
 }
@@ -60,22 +65,22 @@ body {
 }
 
 .container__textbox {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .textbox {
-  flex: 0 0 auto;
   background-color: rgba(68, 84, 106, 0.5);
   border-radius: 20px;
   font-size: 30px;
   color: white;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-right: 5em;
+}
+
+.textbox__Success {
+  text-align: center;
 }
 
 .textbox__Success__CommunityName {
@@ -83,26 +88,26 @@ body {
   margin: 0.5em 1em 0.5em 1em;
 }
 
-.textbox__info {
-  font-size: 0.8em;
+.container__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7em;
   font-family: Objectivity, sans-serif;
-  color: white;
+}
+
+.textbox__info {
   padding: 0.2em;
-  text-align: left;
-  margin: 1em 1em 2em 1em;
+  text-align: center;
 }
 
 .classposter__sign {
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 50%;
-  width: 100%;
-  transform: translate(-80, -50%);
 }
 
 .poster__download {
-  left: 50%;
   display: flex;
   justify-content: center;
 }
