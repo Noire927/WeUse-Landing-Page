@@ -70,6 +70,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  text-align: center;
 }
 
 .textbox {
@@ -79,26 +80,24 @@ body {
   color: white;
 }
 
-.textbox__Success {
-  text-align: center;
-}
-
 .textbox__Success__CommunityName {
-  text-align: center;
   margin: 0.5em 1em 0.5em 1em;
 }
 
 .container__info {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   font-size: 0.7em;
   font-family: Objectivity, sans-serif;
+  padding: 0em 1em 0em 1em;
+}
+
+.textbox__important {
+  text-decoration: underline;
 }
 
 .textbox__info {
   padding: 0.2em;
-  text-align: center;
 }
 
 .classposter__sign {
