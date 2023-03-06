@@ -79,6 +79,10 @@ body {
   color: white;
 }
 
+.textbox__important {
+  text-decoration: underline;
+}
+
 .textbox__Success {
   text-align: center;
 }
