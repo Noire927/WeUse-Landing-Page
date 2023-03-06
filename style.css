@@ -115,6 +115,11 @@ body {
 
 .poster__key {
   padding: 1rem;
+  opacity: 60%;
+}
+
+.poster__key:hover {
+  opacity: 100%;
 }
 
 .textbox__socials {
